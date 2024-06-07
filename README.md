@@ -1,50 +1,39 @@
-# Micro Projects
+# Aqua+
 
-Various little tools and utilities to place into assorted Raspberry Pis on the network. Or stand-alone app-ish things.
+The premiere useless local streaming application.
 
-## Hoarder Util (h-util)
+Created to test and tinker with uploads and media on the server and, and `preact` on the front-end.
 
-Moved to [own project](https://github.com/Perugia-Viewer/Hoarder-Util)
+As of splitting this repo off, the installation is broken/not complete and will require an update.
 
-## Slides
+## Setup
 
-Host a service that collects images from a chosen directory and broadcasts them out for viewing. Intended to operate as a digital picture frame type scenario.
+Was originally from a repo that included various unrelated projects, so each piece will need to be set up individually. An enhancement would be to set up a full monorepo configuration.
 
-Supports:
+Navigate into `/client` and `/server` and run `npm i` to install dependencies.
 
-- Exif reading
-- Mapbox API for GPS data
-- Shuffling data
-- Scanning directories
+### Client-side
 
-Eventually received a lot of edits to make it work more like a slide viewer, which probably caused some mess.
+```bash
+# install dependencies
+npm install
 
-## Slideshow
+# serve with hot reload at localhost:8080
+npm run dev
 
-Slide show viewer for family picture viewing.
+# build for production with minification
+npm run build
 
-## Streamer
+# test the production build locally
+npm run serve
+```
 
-Small test for a media streaming application _Aqua+_. This is the server-side project created to experiment with uploads and media.
+### Server-side
 
-## Streamer-client
+```bash
+node index.js
+```
 
-Client-side project from the streaming application _Aqua+_. Created to experiment with `preact`.
+Additional requirements are needed for fluent-ffmpeg and other media operations
 
-## Muzaque Parser
-
-Small test application to experiment with Tauri and building a compiled front-end.
-
-Parses a library XML exported from iTunes/Apple Music, and displays basic aggregated library info via charts and pie graphs.
-
-## Utilities
-
-Pre-H-util project that's hosted somewhere and offers a small UI to perform various utility tasks.
-
-Supports:
-
-- Prefixing image names by their creation date
-- Downloading and tagging youtube videos
-- Migrating files
-
-Has its own barebones front-end to handle user activity when connecting to the server.
+- `sudo apt-get install libvpx-dev`
