@@ -12,7 +12,7 @@ Was originally from a repo that included various unrelated projects, so each pie
 
 Navigate into `/client` and `/server` and run `npm i` to install dependencies.
 
-### Client-side
+### Client-side "Aqua"
 
 ```bash
 # install dependencies
@@ -28,7 +28,7 @@ npm run build
 npm run serve
 ```
 
-### Server-side
+### Server-side "Kazuma"
 
 You will need to create a directory to hold uploaded media.
 
