@@ -30,8 +30,14 @@ npm run serve
 
 ### Server-side
 
+You will need to create a directory to hold uploaded media.
+
+Populate `.env` based on the example provided. The folder path should be the one you already created for media.
+
 ```bash
 node index.js
+# or:
+npm run dev
 ```
 
 Additional requirements are needed for fluent-ffmpeg and other media operations
