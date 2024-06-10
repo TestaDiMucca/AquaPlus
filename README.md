@@ -12,7 +12,7 @@ Was originally from a repo that included various unrelated projects, so each pie
 
 Navigate into `/client` and `/server` and run `npm i` to install dependencies.
 
-### Client-side
+### Client-side "Aqua"
 
 ```bash
 # install dependencies
@@ -28,10 +28,16 @@ npm run build
 npm run serve
 ```
 
-### Server-side
+### Server-side "Kazuma"
+
+You will need to create a directory to hold uploaded media.
+
+Populate `.env` based on the example provided. The folder path should be the one you already created for media.
 
 ```bash
 node index.js
+# or:
+npm run dev
 ```
 
 Additional requirements are needed for fluent-ffmpeg and other media operations
