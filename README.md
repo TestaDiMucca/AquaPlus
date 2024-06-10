@@ -1,5 +1,9 @@
 # Aqua+
 
+<picture>
+	<img alt="Image of Goddess Aqua." src="https://github.com/TestaDiMucca/AquaPlus/blob/master/client/src/assets/icons/android-chrome-512x512.png?raw=true">
+</picture>
+
 The premiere useless local streaming application.
 
 Created to test and tinker with uploads and media on the server and, and `preact` on the front-end.
