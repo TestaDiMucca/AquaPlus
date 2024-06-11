@@ -34,11 +34,10 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
-    "preact": "^8.5.2",
-    "preact-compat": "^3.17.0",
+    "preact": "^10.22.0",
     "preact-material-components": "^1.4.3",
     "preact-render-to-string": "^4.1.0",
-    "preact-router": "^2.5.5",
+    "preact-router": "^3.2.1",
     "socket.io-client": "^2.3.0"
   }
 }
